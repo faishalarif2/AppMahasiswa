@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">App Mahasiswa</string>
+    <string name="welcome">Welcome !</string>
+    <string name="login">Login</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="tambah_data">Tambah Data</string>
+    <string name="tambah_mahasiswa">Tambah Mahasiswa</string>
+    <string name="simpan">Simpan</string>
+    <string name="edit_mahasiswa">Edit Mahasiswa</string>
+    <string name="nama">Nama</string>
+    <string name="nim">NIM</string>
+    <string name="jurusan">Jurusan</string>
+    <string name="alamat">Alamat</string>
+    <string name="matakuliah">Matkul</string>
+    <string name="telepon">Telepon</string>
+    <string name="edaftar">Daftar</string>
+    <string name="enama">Nama Lengkap</string>
+    <string name="ealamat">Alamat Lengkap</string>
+    <string name="eemail">Email</string>
+    <string name="epass">Password</string>
+    <string name="erepass">Password Ulang</string>
+</resources>

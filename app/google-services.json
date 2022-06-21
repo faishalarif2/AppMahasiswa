@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "981700578262",
+    "project_id": "appmahasiswa-31326",
+    "storage_bucket": "appmahasiswa-31326.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:981700578262:android:df4339eb7db11087733277",
+        "android_client_info": {
+          "package_name": "com.example.appmahasiswa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "981700578262-e07j6liobstifbu9hbprbj91gkg5slrm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBue7trmWSNm02EFvzA_UUA4xCV-ht4RCY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "981700578262-e07j6liobstifbu9hbprbj91gkg5slrm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

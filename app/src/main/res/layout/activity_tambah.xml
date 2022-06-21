@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TambahActivity"
+    >
+
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:text="@string/tambah_mahasiswa"
+        android:textColor="@color/colorPrimary"
+        android:textSize="45sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btntambah"
+        android:layout_width="218dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv"
+        android:layout_marginLeft="85dp"
+        android:layout_marginTop="17dp"
+        android:background="@color/colorPrimary"
+        android:text="@string/tambah_data"
+        android:textColor="#fff" />
+
+    <EditText
+        android:id="@+id/etnama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btntambah"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="25dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:hint="@string/nama"
+        android:textColorHint="@color/colorPrimary" />
+
+    <EditText
+        android:id="@+id/etnim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etnama"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="25dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:hint="@string/nim"
+        android:textColorHint="@color/colorPrimary" />
+
+    <EditText
+        android:id="@+id/etjurusan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etnim"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="25dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:hint="@string/jurusan"
+        android:textColorHint="@color/colorPrimary" />
+
+    <EditText
+        android:id="@+id/etalamat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etjurusan"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="25dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:hint="@string/alamat"
+        android:textColorHint="@color/colorPrimary" />
+
+    <EditText
+        android:id="@+id/etmatkul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etjurusan"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="25dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:hint="@string/matakuliah"
+        android:textColorHint="@color/colorPrimary" />
+
+    <EditText
+        android:id="@+id/ettelp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etjurusan"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="166dp"
+        android:layout_marginEnd="25dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:hint="@string/telepon"
+        android:textColorHint="@color/colorPrimary" />
+
+
+</RelativeLayout>
