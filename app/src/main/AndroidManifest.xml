@@ -15,7 +15,6 @@
         <activity
             android:name=".TambahActivity"
             android:parentActivityName=".HomeActivity" />
-        <activity android:name=".ProfileActivity" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".Item" />
         <activity android:name=".HomeActivity" />

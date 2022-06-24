@@ -17,12 +17,12 @@ public class SQLiteHelper extends SQLiteOpenHelper {
     private static final String kolom3 = "NIM";
     private static final String kolom4 = "JURUSAN";
     private static final String kolom5 = "ALAMAT";
-    private static final String kolom6 = "MATA KULIAH";
+    private static final String kolom6 = "MATA_KULIAH";
     private static final String kolom7 = "TELEPON";
 
 
     public SQLiteHelper(@Nullable Context context) {
-        super(context, namadb, null, 1);
+        super(context, "datamahasiswa.db1", null, 1);
     }
 
     @Override
@@ -43,9 +43,10 @@ public class SQLiteHelper extends SQLiteOpenHelper {
         db.execSQL("DROP TABLE IF EXISTS " + namatabel);
     }
 
-    public Boolean insertData(String nama, String nim, String jurusan, String alamat, String matkul, String telepon) {
+    public Boolean insertData(String id, String nama, String nim, String jurusan, String alamat, String matkul, String telepon) {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues values = new ContentValues();
+        values.put(kolom1, id);
         values.put(kolom2, nama);
         values.put(kolom3, nim);
         values.put(kolom4, jurusan);
@@ -53,7 +54,7 @@ public class SQLiteHelper extends SQLiteOpenHelper {
         values.put(kolom6, matkul);
         values.put(kolom7, telepon);
 
-        long result = db.insert(namatabel, null, values);
+        long result = db.insert("mahasiswa", null, values);
         return result != -1;
     }
 
@@ -78,6 +79,6 @@ public class SQLiteHelper extends SQLiteOpenHelper {
 
     public Integer deleteData(String id){
         SQLiteDatabase db = this.getWritableDatabase();
-        return db.delete(namatabel,kolom1+" ? ",new String[]{id});
+        return db.delete("mahasiswa"," id = ? ",new String[]{id});
     }
 }

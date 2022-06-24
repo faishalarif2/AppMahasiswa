@@ -41,7 +41,7 @@ public class TambahActivity extends AppCompatActivity {
             jurusan = bundle.getString("jurusan");
             alamat = bundle.getString("alamat");
             matkul = bundle.getString("mata kuliah");
-            telepon = bundle.getString(("telepon"));
+            telepon = bundle.getString("telepon");
             pilih = bundle.getString("tanda");
 
             etnama.setText(nama);
@@ -84,7 +84,7 @@ public class TambahActivity extends AppCompatActivity {
                     ettelp.requestFocus();
                 }else {
                     if (pilih.equals("Tambah")){
-                        boolean isInsert = helper.insertData(nama, nim, jurusan, alamat, matkul, telepon);
+                        boolean isInsert = helper.insertData(id, nama, nim, jurusan, alamat, matkul, telepon);
                         if (isInsert){
                             Toast.makeText(TambahActivity.this, "data berhasil disimpan", Toast.LENGTH_SHORT).show();
                             kosong();

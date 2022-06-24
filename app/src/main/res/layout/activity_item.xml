@@ -74,6 +74,7 @@
             android:layout_height="50dp"
             android:layout_weight="1"
             android:src="@drawable/ic_delete_black_24dp" />
+
     </LinearLayout>
 
 </LinearLayout>
